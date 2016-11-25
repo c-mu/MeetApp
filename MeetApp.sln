@@ -3,18 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetApp", "MeetApp\MeetApp.csproj", "{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetApp", "src\MeetApp\MeetApp.csproj", "{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{306C1BF4-9748-4625-94B7-D05BDFB8A8F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6D683277-94FF-4486-929D-713920ACFF60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{9FAC580B-FCBC-43FF-8E16-A22F55A76244}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "test\UnitTest\UnitTest.csproj", "{B826935D-BE20-457B-BF13-17446D7C02CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|ARM.ActiveCfg = Debug|ARM
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|ARM.Build.0 = Debug|ARM
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +39,7 @@ Global
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|x86.ActiveCfg = Debug|x86
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|x86.Build.0 = Debug|x86
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Debug|x86.Deploy.0 = Debug|x86
+		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|Any CPU.ActiveCfg = Release|x86
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|ARM.ActiveCfg = Release|ARM
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|ARM.Build.0 = Release|ARM
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,8 +49,32 @@ Global
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|x86.ActiveCfg = Release|x86
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|x86.Build.0 = Release|x86
 		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74}.Release|x86.Deploy.0 = Release|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|ARM.Build.0 = Debug|ARM
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|x64.ActiveCfg = Debug|x64
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|x64.Build.0 = Debug|x64
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|x64.Deploy.0 = Debug|x64
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|x86.ActiveCfg = Debug|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|x86.Build.0 = Debug|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Debug|x86.Deploy.0 = Debug|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|Any CPU.ActiveCfg = Release|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|ARM.ActiveCfg = Release|ARM
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|ARM.Build.0 = Release|ARM
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|ARM.Deploy.0 = Release|ARM
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|x64.ActiveCfg = Release|x64
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|x64.Build.0 = Release|x64
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|x64.Deploy.0 = Release|x64
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|x86.ActiveCfg = Release|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|x86.Build.0 = Release|x86
+		{B826935D-BE20-457B-BF13-17446D7C02CD}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18DC2217-F8B4-44B4-83C9-4DB12C9EAC74} = {306C1BF4-9748-4625-94B7-D05BDFB8A8F0}
+		{B826935D-BE20-457B-BF13-17446D7C02CD} = {6D683277-94FF-4486-929D-713920ACFF60}
 	EndGlobalSection
 EndGlobal
