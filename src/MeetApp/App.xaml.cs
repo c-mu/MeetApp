@@ -37,7 +37,7 @@ namespace MeetApp
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -45,6 +45,7 @@ namespace MeetApp
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
+            await AuthenticationManager.GetInstance("1tso1vns83uhmah90vch8cou64").Authenticate();
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
